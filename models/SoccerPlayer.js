@@ -1,11 +1,9 @@
-const { Schema, model } = require('mongoose');
+const { Schema, model } = require("mongoose");
 
-const SoccerPlayerSchema = Schema(
-  {
-    name: String,
-    team: String,
-    age: Number
-  }
-)
+const SoccerPlayerSchema = Schema({
+  name: String,
+  team: String,
+  age: Number,
+});
 
-module.exports = model('SoccerPlayer', SoccerPlayerSchema)
+module.exports = model("SoccerPlayer", SoccerPlayerSchema);
